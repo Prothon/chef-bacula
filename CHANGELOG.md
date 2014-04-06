@@ -5,7 +5,7 @@ This file is used to list changes made in each version of the bacula-client cook
 
 0.1.0
 -----
-- [your_name] - Initial release of bacula-client
+- [Andrew Raymer] - Initial release of bacula-client
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

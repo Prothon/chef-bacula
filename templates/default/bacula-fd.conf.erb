@@ -6,13 +6,14 @@
 # There is not much to change here except perhaps the
 # File daemon Name to
 #
+####### This file was created with chef cookbook chef-bacula::agent ###########################
 
 #
 # List Directors who are permitted to contact this File daemon
 #
 Director {
   Name = bacula-dir
-  Password = "<%= node['bacula']['client']['password'] %>"
+  Password = "<%= node['bacula']['dir']['password'] %>"
 }
 
 #

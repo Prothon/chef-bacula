@@ -1,5 +1,5 @@
-node['bacula']['client']['packages'].each do |baculapkg|
-    package baculapkg
+package "bacula-console" do
+	action :install
 end
 
 template "/etc/bacula/bconsole.conf" do
@@ -7,15 +7,4 @@ template "/etc/bacula/bconsole.conf" do
     mode "0644"
     owner "root"
     group "root"
-end
-
-template "/etc/bacula/bacula-fd.conf" do
-    source "bacula-fd.conf.erb"
-    mode "0644"
-    owner "root"
-    group "root"
-end
-
-service "bacula-fd" do
-    action [:start, :enable]
 end

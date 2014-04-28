@@ -5,6 +5,6 @@
 Director {
   Name = bacula-dir
   DIRport = 9101
-  address = <%= node['bacula']['client']['ipaddress'] %> 
-  Password = "<%= node['bacula']['client']['password'] %>"
+  address = <%= node['bacula']['dir']['ipaddress'] %>
+  Password = "<%= node['bacula']['dir']['password'] %>"
 }
